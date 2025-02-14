@@ -39,10 +39,10 @@ public class MethodsToAnalyze {
 	 * @param array ints that need to be ordered 
 	 */
 	public static void sortIt(int[] array) {
-		for (int next = 1; next < array.length; next++) { //2 + n(2 + n/2)4) = 2 + 2n + 4n^2 /2
+		for (int next = 1; next < array.length; next++) { //2 + n(2 + n/2)4/2) = 2 + 2n + 2n^2 /2
 			int value = array[next]; //1
 			int index = next; //1
-			while (index > 0 && value < array[index - 1]) { //2 + (n/2)4) 
+			while (index > 0 && value < array[index - 1]) { //2 + (n/2)4/2) 
 				array[index] = array[index - 1];
 				index--;
 			}
